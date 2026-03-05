@@ -1,0 +1,17 @@
+# Dataset
+Plant_Disease_Dataset/
+
+# Model files
+*.keras
+*.h5
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
