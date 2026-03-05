@@ -38,6 +38,41 @@ The system uses a **Convolutional Neural Network (CNN)** trained on a plant leaf
 
 ---
 
+# 🧠 Model Architecture
+
+The model is a **Convolutional Neural Network (CNN)** designed to extract visual features from plant leaf images and classify them into 38 disease categories.
+
+Architecture summary:
+
+1. **Input Layer**
+   - Image size: **128 × 128 × 3**
+
+2. **Convolution Layers**
+   - Extract features such as leaf texture, color patterns, and disease spots.
+
+3. **Max Pooling Layers**
+   - Reduce spatial size while keeping important features.
+
+4. **Flatten Layer**
+   - Converts extracted features into a single vector.
+
+5. **Dense (Fully Connected) Layers**
+   - Learn complex patterns for classification.
+
+6. **Output Layer**
+   - **Softmax activation**
+   - Predicts one of **38 plant disease classes**
+
+Training configuration:
+
+- **Loss Function:** Categorical Crossentropy  
+- **Optimizer:** Adam  
+- **Epochs:** 10  
+- **Batch Size:** 32  
+- **Validation Accuracy:** ~97%
+
+---
+
 # 📊 Dataset
 
 The model is trained on the **PlantVillage dataset** containing approximately:
